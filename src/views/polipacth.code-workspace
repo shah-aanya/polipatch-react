@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "polipacth",
+			"path": "../../../../Documents/polipacth"
+		},
+		{
+			"name": "polipatch",
+			"path": "../../../../Documents/polipatch"
+		},
+		{
+			"name": "polipatch (copy)-react",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "polipatch (copy)-react"
+	}
+}
