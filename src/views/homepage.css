@@ -82,7 +82,7 @@ body,
   padding: 0;
 
   --design-width: 1280;
-  --design-height: 3791;
+  --design-height: 2050;
   --page-scale: calc(100vw / (var(--design-width) * 1px));
 }
 .homepage-scale-wrap {
@@ -93,7 +93,7 @@ body,
 
 .homepage-thq-homepage-elm {
   width: 1280px;
-  height: 3791px;
+  height: 2050px;
   display: flex;
   overflow: hidden;
   position: absolute;
@@ -153,16 +153,16 @@ body,
 }
 
 .homepage-thq-screenshot20251205at12541pm1-elm {
-  top: 1261px;
+  top: 1111px;
   left: -24px;
   width: 1306px;
-  height: 712px;
+  height: 400px;
   opacity: 0.5;
   position: absolute;
 }
 
 .homepage-thq-text-elm12 {
-  top: 784px;
+  top: 790px;
   left: 215px;
   color: rgba(0, 0, 0, 1);
   width: 847px;
@@ -179,13 +179,13 @@ body,
 }
 
 .homepage-thq-text-elm14 {
-  top: 884px;
+  top: 870px;
   left: 220px;
   color: rgba(0, 0, 0, 1);
   width: 847px;
   height: auto;
   position: absolute;
-  font-size: 25px;
+  font-size: 16px;
   font-style: Regular;
   text-align: center;
   font-family: Playfair Display;
@@ -196,8 +196,8 @@ body,
 }
 
 .homepage-thq-component4-elm {
-  top: 1373px;
-  left: 857px;
+  top: 1125px;
+  left: 856px;
   width: 333px;
   height: 499px;
   display: flex;
@@ -208,20 +208,20 @@ body,
 
 .homepage-thq-rectangle3-elm1 {
   top: 42px;
-  left: 35px;
-  width: 262px;
-  height: 320px;
+  left: 61px;
+  width: 200px;
+  height: 220px;
   position: absolute;
 }
 
 .homepage-thq-text-elm15 {
-  top: 440px;
-  left: 41px;
+  top: 320px;
+  left: 35px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 14px;
   font-style: Regular;
   text-align: center;
   font-family: Anonymous Pro;
@@ -232,8 +232,8 @@ body,
 }
 
 .homepage-thq-title-elm1 {
-  top: 377px;
-  left: 41px;
+  top: 265px;
+  left: 35px;
   width: 252px;
   height: 48px;
   display: flex;
@@ -247,24 +247,28 @@ body,
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 20px;
   font-style: Regular;
   text-align: center;
   font-family: Kay Pho Du;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.3;
   font-stretch: normal;
   text-decoration: underline;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .homepage-thq-text-elm17 {
-  top: 2046px;
+  top: 1570px;
   left: 24px;
   color: rgba(251, 72, 72, 1);
   width: 1280px;
   height: auto;
   position: absolute;
-  font-size: 100px;
+  font-size: 55px;
   font-style: SemiBold;
   text-align: center;
   font-family: Playfair Display;
@@ -275,36 +279,36 @@ body,
 }
 
 .homepage-thq-rectangle-elm {
-  top: 2226px;
+  top: 1790px;
   left: 56px;
-  width: 346px;
-  height: 461px;
+  width: 220px;
+  height: 300px;
   position: absolute;
 }
 
 .homepage-thq-screenshot20251201at122141am1-elm {
-  top: 2138px;
+  top: 1710px;
   left: 434px;
-  width: 411px;
-  height: 427px;
+  width: 280px;
+  height: 280px;
   position: absolute;
 }
 
 .homepage-thq-screenshot20251201at122129am1-elm {
-  top: 2258px;
+  top: 1830px;
   left: 877px;
-  width: 495px;
-  height: 367px;
+  width: 320px;
+  height: 240px;
   position: absolute;
 }
 
 .homepage-thq-text-elm23 {
-  top: 2745px;
+  top: 1520px;
   left: 71px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 20px;
   font-style: SemiBold;
   text-align: left;
   font-family: Kay Pho Du;
@@ -315,12 +319,12 @@ body,
 }
 
 .homepage-thq-text-elm24 {
-  top: 2613px;
+  top: 2140px;
   left: 449px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 20px;
   font-style: SemiBold;
   text-align: left;
   font-family: Kay Pho Du;
@@ -331,12 +335,12 @@ body,
 }
 
 .homepage-thq-text-elm25 {
-  top: 2659px;
+  top: 2180px;
   left: 889px;
   color: rgba(0, 0, 0, 1);
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 20px;
   font-style: SemiBold;
   text-align: left;
   font-family: Kay Pho Du;
@@ -347,13 +351,13 @@ body,
 }
 
 .homepage-thq-text-elm26 {
-  top: 2795px;
+  top: 1570px;
   left: 72px;
   color: rgba(59, 90, 247, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 16px;
   font-style: Regular;
   text-align: left;
   font-family: Kay Pho Du;
@@ -364,13 +368,13 @@ body,
 }
 
 .homepage-thq-text-elm27 {
-  top: 2658px;
+  top: 2183px;
   left: 444px;
   color: rgba(59, 90, 247, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 16px;
   font-style: Regular;
   text-align: left;
   font-family: Kay Pho Du;
@@ -381,13 +385,13 @@ body,
 }
 
 .homepage-thq-text-elm28 {
-  top: 2706px;
+  top: 2231px;
   left: 891px;
   color: rgba(59, 90, 247, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 16px;
   font-style: Regular;
   text-align: left;
   font-family: Kay Pho Du;
@@ -398,13 +402,13 @@ body,
 }
 
 .homepage-thq-text-elm29 {
-  top: 2633px;
+  top: 2160px;
   left: 449px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Anonymous Pro;
@@ -415,13 +419,13 @@ body,
 }
 
 .homepage-thq-text-elm30 {
-  top: 2770px;
+  top: 2295px;
   left: 72px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Anonymous Pro;
@@ -432,13 +436,13 @@ body,
 }
 
 .homepage-thq-text-elm31 {
-  top: 2681px;
+  top: 2206px;
   left: 889px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 14px;
   font-style: Regular;
   text-align: left;
   font-family: Anonymous Pro;
@@ -449,8 +453,8 @@ body,
 }
 
 .homepage-thq-component1-elm {
-  top: 1376px;
-  left: 74px;
+  top: 1125px;
+  left: 90px;
   width: 333px;
   height: 499px;
   display: flex;
@@ -461,20 +465,20 @@ body,
 
 .homepage-thq-rectangle3-elm2 {
   top: 42px;
-  left: 35px;
-  width: 262px;
-  height: 320px;
+  left: 61px;
+  width: 200px;
+  height: 220px;
   position: absolute;
 }
 
 .homepage-thq-text-elm32 {
-  top: 440px;
-  left: 41px;
+  top: 320px;
+  left: 35px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 14px;
   font-style: Regular;
   text-align: center;
   font-family: Anonymous Pro;
@@ -485,8 +489,8 @@ body,
 }
 
 .homepage-thq-title-elm2 {
-  top: 377px;
-  left: 41px;
+  top: 265px;
+  left: 35px;
   width: 252px;
   height: 48px;
   display: flex;
@@ -500,19 +504,23 @@ body,
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 20px;
   font-style: Regular;
   text-align: center;
   font-family: Kay Pho Du;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.3;
   font-stretch: normal;
   text-decoration: underline;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .homepage-thq-component3-elm {
-  top: 1376px;
-  left: 467px;
+  top: 1125px;
+  left: 473px;
   width: 333px;
   height: 499px;
   display: flex;
@@ -523,20 +531,20 @@ body,
 
 .homepage-thq-rectangle3-elm3 {
   top: 42px;
-  left: 35px;
-  width: 262px;
-  height: 320px;
+  left: 61px;
+  width: 200px;
+  height: 220px;
   position: absolute;
 }
 
 .homepage-thq-text-elm34 {
-  top: 440px;
-  left: 41px;
+  top: 320px;
+  left: 35px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 14px;
   font-style: Regular;
   text-align: center;
   font-family: Anonymous Pro;
@@ -547,8 +555,8 @@ body,
 }
 
 .homepage-thq-title-elm3 {
-  top: 377px;
-  left: 41px;
+  top: 265px;
+  left: 35px;
   width: 252px;
   height: 48px;
   display: flex;
@@ -562,18 +570,22 @@ body,
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 36px;
+  font-size: 20px;
   font-style: Regular;
   text-align: center;
   font-family: Kay Pho Du;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.3;
   font-stretch: normal;
   text-decoration: underline;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .homepage-thq-component6-elm {
-  top: 2901px;
+  top: 1570px;
   left: 24px;
   width: 1199px;
   height: 601px;
@@ -601,8 +613,8 @@ body,
 }
 
 .homepage-thq-text-elm36 {
-  top: 3196px;
-  left: 517px;
+  top: 1850px;
+  left: 500px;
   color: rgba(0, 0, 0, 1);
   width: 252px;
   height: auto;
@@ -618,10 +630,28 @@ body,
 }
 
 .homepage-thq-text-elm39 {
-  top: 1320px;
+  top: 1060px;
+  z-index: 2;
   left: 248px;
   color: rgba(251, 72, 72, 1);
   width: 783px;
+  height: auto;
+  position: absolute;
+  font-size: 130px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Kapakana;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.homepage-thq-text-elm40 {
+  top: 1560px;
+  left: 128px;
+  color: rgba(59, 90, 247, 1);
+  width: 1014px;
   height: auto;
   position: absolute;
   font-size: 150px;
@@ -634,26 +664,11 @@ body,
   text-decoration: none;
 }
 
-.homepage-thq-text-elm40 {
-  top: 2859px;
-  left: 128px;
-  color: rgba(59, 90, 247, 1);
-  width: 1014px;
-  height: auto;
-  position: absolute;
-  font-size: 250px;
-  font-style: Regular;
-  text-align: center;
-  font-family: Kapakana;
-  font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-
 .homepage-thq-frame1-elm {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
   gap: 10px;
-  top: 1070px;
+  top: 980px;
   left: 552px;
   width: 163px;
   height: 38px;
@@ -673,13 +688,15 @@ body,
 }
 
 .homepage-thq-text-elm41 {
-  left: -15px;
+  left: 0px;
+  width: 163px;
+  text-align: center;
   color: rgba(203, 206, 219, 1);
   width: 194px;
   height: auto;
   z-index: 1;
   position: absolute;
-  font-size: 25px;
+  font-size: 16px;
   font-style: Regular;
   text-align: center;
   font-family: Playfair Display;
@@ -690,6 +707,11 @@ body,
 }
 
 /* optional */
+.homepage-thq-frame1-elm:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
 .homepage-learn-more-link {
   display: contents;
 }
@@ -720,4 +742,17 @@ body,
   .homepage-nav-link {
     font-size: 15px;
   }
+}
+/* Auth area in navbar */
+.articles-auth-area { display: flex; align-items: center; }
+.articles-user-info { display: flex; align-items: center; gap: 8px; }
+.articles-user-avatar { width: 32px; height: 32px; border-radius: 50%; }
+.articles-user-role {
+  font-size: 12px;
+  padding: 2px 8px;
+  background-color: rgba(59, 90, 247, 0.15);
+  color: rgba(59, 90, 247, 1);
+  border-radius: 20px;
+  font-family: 'Anonymous Pro', monospace;
+  text-transform: uppercase;
 }

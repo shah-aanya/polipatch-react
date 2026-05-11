@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { AuthProvider } from './AuthContext'
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +18,7 @@ import Debates from './views/debates'
 import FrameSpecificDebates from './views/frame-specific-debates'
 import Source from './views/source'
 import NotFound from './views/not-found'
+import Profile from './views/profile'
 
 const App = () => {
   return (
@@ -26,13 +28,10 @@ const App = () => {
         <Route component={ABOUTUS} exact path="/aboutus" />
         <Route component={Volunteer} exact path="/volunteer" />
         <Route component={Articles} exact path="/articles" />
+        <Route component={Profile} exact path="/profile" />
         <Route component={Specificarticle} exact path="/specificarticle" />
         <Route component={Debates} exact path="/debates" />
-        <Route
-          component={FrameSpecificDebates}
-          exact
-          path="/frame-specific-debates"
-        />
+        <Route component={FrameSpecificDebates} exact path="/frame-specific-debates" />
         <Route component={Source} exact path="/source" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
@@ -41,4 +40,9 @@ const App = () => {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <AuthProvider>
+    <App />
+  </AuthProvider>,
+  document.getElementById('app')
+)

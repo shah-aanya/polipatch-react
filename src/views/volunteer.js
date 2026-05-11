@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Helmet } from 'react-helmet'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { useAuth } from '../AuthContext'
+import { db } from '../firebase'
+import { doc, getDoc } from 'firebase/firestore'
 
 import './volunteer.css'
 
 const Volunteer = (props) => {
+  const { user, isLoggedIn, userRole, signInWithGoogle } = useAuth()
+  const history = useHistory()
+  const [volunteerHours, setVolunteerHours] = useState(0)
+
+  useEffect(() => {
+    if (!user) return
+    const loadHours = async () => {
+      const snap = await getDoc(doc(db, 'users', user.uid))
+      if (snap.exists()) {
+        setVolunteerHours(snap.data().volunteerHours || 0)
+      }
+    }
+    loadHours()
+  }, [user])
+
+  const fullStars = Math.floor(volunteerHours / 5)
+  const hasHalfStar = (volunteerHours % 5) >= 2.5
+
   return (
     <div className="volunteer-container1">
       <Helmet>
@@ -30,6 +51,16 @@ const Volunteer = (props) => {
           <Link to="/articles" className="homepage-nav-link">Articles</Link>
           <Link to="/debates" className="homepage-nav-link">Debates</Link>
           <Link to="/source" className="homepage-nav-link">Sources</Link>
+          <div className="articles-auth-area">
+            {isLoggedIn ? (
+              <div className="articles-user-info" onClick={() => history.push('/profile')} style={{cursor:'pointer'}}>
+                <img src={user.photoURL} alt="profile" className="articles-user-avatar" />
+                {userRole && <span className="articles-user-role">{userRole}</span>}
+              </div>
+            ) : (
+              <button onClick={signInWithGoogle} className="articles-auth-btn">Sign in with Google</button>
+            )}
+          </div>
         </nav>
       </div>
 
@@ -39,21 +70,36 @@ const Volunteer = (props) => {
           <div className="volunteer-thq-volunteer-elm">
             <span className="volunteer-thq-text-elm16">PoliPatch</span>
             <span className="volunteer-thq-text-elm17">volunteer with us today!!</span>
-            <span className="volunteer-thq-text-elm18">get one star for every hour your volunteer</span>
+            <span className="volunteer-thq-text-elm18">get one star for every five hours you volunteer</span>
             <span className="volunteer-thq-text-elm19">Volunteer</span>
             <span className="volunteer-thq-text-elm20">Track your progress!</span>
             <div className="volunteer-thq-frame7-elm">
               <span className="volunteer-thq-text-elm21">01</span>
               <span className="volunteer-thq-text-elm22">02</span>
             </div>
-            <img src="/star12091-l3zt.svg" alt="Star12091" className="volunteer-thq-star1-elm" />
-            <img src="/star42091-z8a9.svg" alt="Star42091" className="volunteer-thq-star4-elm" />
-            <img src="/star52091-ptcc.svg" alt="Star52091" className="volunteer-thq-star5-elm" />
-            <img src="/star22091-5lku.svg" alt="Star22091" className="volunteer-thq-star2-elm" />
-            <img src="/star32091-891b.svg" alt="Star32091" className="volunteer-thq-star3-elm" />
             <img src="/rectangle52091-wdo8.svg" alt="Rectangle52091" className="volunteer-thq-rectangle5-elm" />
+            {/* Decorative stars near title - always visible */}
+            <img src="/star42091-z8a9.svg" alt="Star" className="volunteer-thq-star4-elm" />
+            <img src="/star52091-ptcc.svg" alt="Star" className="volunteer-thq-star5-elm" />
             <span className="volunteer-thq-text-elm24">Total hours:</span>
-            <span className="volunteer-thq-text-elm25">3.5</span>
+            <span className="volunteer-thq-text-elm25">{isLoggedIn ? volunteerHours : '—'}</span>
+            {/* Dynamic stars - grid layout, 5 per row, smaller after 75hrs */}
+            {isLoggedIn && Array.from({ length: Math.min(fullStars, 25) }).map((_, i) => {
+              const isSmall = volunteerHours >= 75
+              const size = isSmall ? 40 : 80
+              const gapH = isSmall ? 45 : 70
+              const gapV = isSmall ? 55 : 100
+              const perRow = isSmall ? 10 : 5
+              return (
+                <img key={i} src="/star12091-l3zt.svg" alt="star" className="volunteer-dynamic-star" style={{
+                  position: 'absolute',
+                  top: `${500 + Math.floor(i / perRow) * gapV}px`,
+                  left: `${600 - (i % perRow) * gapH}px`,
+                  width: `${size}px`,
+                  height: `${size}px`,
+                }} />
+              )
+            })}
             <span className="volunteer-thq-text-elm26">Ways to Volunteer</span>
             <span className="volunteer-thq-text-elm27">QUESTIONS?</span>
             <span className="volunteer-thq-text-elm28">

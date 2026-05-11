@@ -16,9 +16,11 @@
   display: flex;
   justify-content: center;
   padding: 0;
+  position: relative;
+  z-index: 2;
 
   --design-width: 1280;
-  --design-height: 4488;
+  --design-height: 2400;
   --page-scale: calc(100vw / (var(--design-width) * 1px));
 }
 
@@ -30,15 +32,15 @@
 
 .aboutus-thq-aboutus-elm {
   width: 1280px;
-  height: 4488px;
+  height: 2400px;
   display: flex;
-  overflow: hidden;
+  overflow: visible;
   position: absolute;
   top: 0;
   left: 50%;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: transparent;
   transform: translateX(-50%) scale(var(--page-scale));
   transform-origin: top center;
 }
@@ -104,13 +106,13 @@
 }
 
 .aboutus-thq-text-elm18 {
-  top: 865px;
+  top: 880px;
   left: 219px;
   color: rgba(0, 0, 0, 1);
   width: 841px;
   height: auto;
   position: absolute;
-  font-size: 35px;
+  font-size: 22px;
   font-style: Regular;
   text-align: center;
   font-family: Anonymous Pro;
@@ -122,7 +124,7 @@
 
 .aboutus-thq-text-elm19 {
   top: 542px;
-  left: 285px;
+  left: 260px;
   color: rgba(0, 0, 0, 1);
   width: 755px;
   height: auto;
@@ -138,46 +140,49 @@
 }
 
 .aboutus-thq-temp-imagelqg-knm1-elm {
-  top: 1060px;
-  left: -24px;
-  width: 554px;
-  height: 369px;
+  top: 980px;
+  left: 146px;
+  width: 320px;
+  height: 210px;
   position: absolute;
 }
 
 .aboutus-thq-text-elm20 {
-  top: 1949px;
+  top: 1500px;
   left: 13px;
   color: rgba(251, 72, 72, 1);
   width: 1254px;
   height: auto;
   position: absolute;
-  font-size: 110px;
+  font-size: 70px;
   font-style: SemiBold;
   text-align: center;
   font-family: Playfair Display;
   font-weight: 600;
-  line-height: 110px;
+  line-height: 60px;
   font-stretch: normal;
   text-decoration: none;
+  z-index: 1;
 }
 
 .aboutus-thq-rectangle4-elm {
-  top: 2135px;
-  left: 112px;
-  width: 1055px;
-  height: 1364px;
+  top: 1600px;
+  left: 100px;
+  width: 1080px;
+  height: 650px;
   position: absolute;
+  background-color: #e8e8e8;
+  opacity: 0.5;
 }
 
 .aboutus-thq-text-elm21 {
-  top: 1069px;
+  top: 990px;
   left: 578px;
   color: rgba(0, 0, 0, 1);
   width: 613px;
   height: auto;
   position: absolute;
-  font-size: 30px;
+  font-size: 23px;
   font-style: Regular;
   text-align: left;
   font-family: Anonymous Pro;
@@ -188,13 +193,13 @@
 }
 
 .aboutus-thq-text-elm22 {
-  top: 1490px;
+  top: 1230px;
   left: 140px;
   color: rgba(0, 0, 0, 1);
   width: 676px;
   height: auto;
   position: absolute;
-  font-size: 30px;
+  font-size: 23px;
   font-style: Regular;
   text-align: left;
   font-family: Anonymous Pro;
@@ -205,13 +210,13 @@
 }
 
 .aboutus-thq-text-elm23 {
-  top: 2215px;
-  left: 306px;
+  top: 1680px;
+  left: 300px;
   color: rgba(0, 0, 0, 1);
-  width: 676px;
+  width: 700px;
   height: auto;
   position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   font-style: Regular;
   text-align: left;
   font-family: Anonymous Pro;
@@ -219,6 +224,7 @@
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
+  z-index: 1;
 }
 
 .aboutus-thq-text-elm24 { font-weight: 400; }
@@ -238,15 +244,15 @@
 .aboutus-thq-text-elm38 { font-weight: 700; }
 
 .aboutus-thq-rectangle-elm {
-  top: 1400px;
-  left: 887px;
-  width: 439px;
-  height: 470px;
+  top: 1180px;
+  left: 860px;
+  width: 240px;
+  height: 260px;
   position: absolute;
 }
 
 .aboutus-thq-text-elm40 {
-  top: 3632px;
+  top: 2300px;
   left: 89px;
   color: rgba(59, 90, 247, 1);
   width: 1102px;
@@ -262,173 +268,396 @@
   text-decoration: none;
 }
 
-.aboutus-thq-component6-elm {
-  top: 3858px;
-  left: 118px;
-  width: 333px;
-  height: 499px;
+/* ============================================================
+   TEAM SECTION — dynamic, outside the scale wrapper
+   ============================================================ */
+
+.aboutus-team-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 15px auto 0;
+  padding: 20px 40px 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutus-team-ceo-bar {
   display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 14px 24px;
+  background: rgba(59, 90, 247, 0.05);
+  border: 1px dashed rgba(59, 90, 247, 0.3);
+  border-radius: 8px;
 }
 
-.aboutus-thq-text-elm41 {
-  top: 451px;
-  left: 41px;
-  color: rgba(0, 0, 0, 1);
-  width: 252px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  text-align: center;
-  font-family: Kay Pho Du;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
+.aboutus-team-ceo-label {
+  font-size: 16px;
+  font-family: 'Anonymous Pro', monospace;
+  color: rgba(59, 90, 247, 1);
+  letter-spacing: 0.5px;
 }
 
-.aboutus-thq-rectangle5-elm1 {
-  top: 33px;
-  left: 20px;
-  width: 293px;
-  height: 383px;
-  position: absolute;
+.aboutus-team-add-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: white;
+  background: rgba(59, 90, 247, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.aboutus-team-add-btn:hover {
+  background: rgba(40, 70, 220, 1);
+  transform: scale(1.03);
 }
 
-.aboutus-thq-rectangle3-elm1 {
-  top: 42px;
-  left: 35px;
-  width: 262px;
-  height: 320px;
-  position: absolute;
-}
-
-.aboutus-thq-text-elm42 {
-  top: 383px;
-  left: 83px;
-  color: rgba(251, 72, 72, 1);
-  width: 177px;
-  height: auto;
-  position: absolute;
-  font-size: 64px;
-  text-align: center;
-  font-family: Kapakana;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.aboutus-thq-component7-elm {
-  top: 3789px;
-  left: 477px;
-  width: 333px;
-  height: 499px;
+/* TEAM GRID */
+.aboutus-team-grid {
   display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
 }
 
-.aboutus-thq-text-elm43 {
-  top: 451px;
-  left: 41px;
-  color: rgba(0, 0, 0, 1);
-  width: 252px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  text-align: center;
-  font-family: Kay Pho Du;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.aboutus-thq-rectangle5-elm2 {
-  top: 33px;
-  left: 20px;
-  width: 293px;
-  height: 383px;
-  position: absolute;
-}
-
-.aboutus-thq-rectangle3-elm2 {
-  top: 42px;
-  left: 35px;
-  width: 262px;
-  height: 320px;
-  position: absolute;
-}
-
-.aboutus-thq-text-elm44 {
-  top: 383px;
-  left: 83px;
-  color: rgba(251, 72, 72, 1);
-  width: 177px;
-  height: auto;
-  position: absolute;
-  font-size: 64px;
-  text-align: center;
-  font-family: Kapakana;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.aboutus-thq-component8-elm {
-  top: 3858px;
-  left: 836px;
-  width: 333px;
-  height: 499px;
+.aboutus-team-card {
   display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
 }
 
-.aboutus-thq-text-elm45 {
-  top: 451px;
-  left: 41px;
-  color: rgba(0, 0, 0, 1);
-  width: 252px;
-  height: auto;
-  position: absolute;
-  font-size: 20px;
-  text-align: center;
-  font-family: Kay Pho Du;
+/* POLAROID */
+.aboutus-polaroid {
+  width: 260px;
+  background: transparent;
+  border-radius: 2px;
+  padding: 14px 14px 0;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+.aboutus-polaroid:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
+
+.aboutus-polaroid-photo {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus-polaroid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+.aboutus-polaroid:hover .aboutus-polaroid-img {
+  filter: grayscale(0%);
+}
+
+.aboutus-polaroid-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e0e0, #c8c8c8);
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  color: #aaa;
+}
+
+.aboutus-polaroid-bottom {
+  padding: 16px 8px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.aboutus-polaroid-name {
+  font-size: 52px;
+  font-family: Kapakana, 'Playfair Display', serif;
   font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-
-.aboutus-thq-rectangle5-elm3 {
-  top: 33px;
-  left: 20px;
-  width: 293px;
-  height: 383px;
-  position: absolute;
-}
-
-.aboutus-thq-rectangle3-elm3 {
-  top: 42px;
-  left: 35px;
-  width: 262px;
-  height: 320px;
-  position: absolute;
-}
-
-.aboutus-thq-text-elm46 {
-  top: 383px;
-  left: 83px;
   color: rgba(251, 72, 72, 1);
-  width: 177px;
-  height: auto;
-  position: absolute;
-  font-size: 64px;
+  line-height: 1;
   text-align: center;
-  font-family: Kapakana;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
+  display: block;
 }
+
+.aboutus-polaroid-role {
+  font-size: 13px;
+  font-family: 'Anonymous Pro', monospace;
+  color: rgba(59, 90, 247, 1);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  display: block;
+}
+
+.aboutus-team-description {
+  margin-top: -8px;
+  font-size: 15px;
+  font-family: 'Anonymous Pro', monospace;
+  color: #444;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+/* CEO action buttons on cards */
+.aboutus-team-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.aboutus-team-edit-btn {
+  padding: 6px 16px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: rgba(59, 90, 247, 1);
+  background: rgba(59, 90, 247, 0.08);
+  border: 1px solid rgba(59, 90, 247, 0.25);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.aboutus-team-edit-btn:hover { background: rgba(59, 90, 247, 0.15); }
+
+.aboutus-team-delete-btn {
+  padding: 6px 16px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: #c62828;
+  background: #ffebee;
+  border: 1px solid rgba(198, 40, 40, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.aboutus-team-delete-btn:hover { background: #ffcdd2; }
+
+/* LOADING / EMPTY */
+.aboutus-team-loading,
+.aboutus-team-empty {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Anonymous Pro', monospace;
+  color: #888;
+  padding: 60px 0;
+}
+
+/* MODAL */
+.aboutus-team-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutus-team-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  width: 480px;
+  max-width: 92vw;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.aboutus-team-modal-title {
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 4px;
+}
+
+.aboutus-team-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-family: 'Anonymous Pro', monospace;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+.aboutus-team-input:focus { border-color: rgba(59, 90, 247, 0.5); }
+
+.aboutus-team-textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+.aboutus-team-photo-preview {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  align-self: flex-start;
+}
+
+.aboutus-team-modal-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.aboutus-team-save-btn {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: white;
+  background: rgba(59, 90, 247, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.aboutus-team-save-btn:hover:not(:disabled) { background: rgba(40, 70, 220, 1); }
+.aboutus-team-save-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.aboutus-team-cancel-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  background: #eee;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.aboutus-team-cancel-btn:hover { background: #e0e0e0; }
+
+/* PHOTO UPLOAD */
+.aboutus-team-upload-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.aboutus-team-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: rgba(59, 90, 247, 1);
+  background: rgba(59, 90, 247, 0.07);
+  border: 1.5px dashed rgba(59, 90, 247, 0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.aboutus-team-upload-btn:hover {
+  background: rgba(59, 90, 247, 0.13);
+  border-color: rgba(59, 90, 247, 0.7);
+}
+
+.aboutus-team-upload-progress {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.aboutus-team-upload-progress > span {
+  font-size: 13px;
+  font-family: 'Anonymous Pro', monospace;
+  color: rgba(59, 90, 247, 1);
+  white-space: nowrap;
+}
+
+.aboutus-team-upload-bar-track {
+  flex: 1;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.aboutus-team-upload-bar {
+  height: 6px;
+  background: rgba(59, 90, 247, 1);
+  border-radius: 3px;
+  transition: width 0.2s ease;
+}
+/* CEO PAGE CONTENT EDITOR */
+.aboutus-content-edit-bar {
+  position: fixed;
+  bottom: 24px;
+  right: -700px;
+  z-index: 9999;
+  max-width: 900px;
+  width: calc(100vw - 48px);
+}
+
+.aboutus-content-edit-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border: 1px dashed rgba(59, 90, 247, 0.3);
+  border-radius: 10px;
+  background: #ffffff;
+  max-height: none;
+  overflow-y: visible;
+}
+
+.aboutus-content-label {
+  font-size: 13px;
+  font-family: 'Anonymous Pro', monospace;
+  color: rgba(59, 90, 247, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: -6px;
+}
+
+.aboutus-content-scroll-wrap {
+  max-height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 8px;
+}
+
+.aboutus-content-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: 'Anonymous Pro', monospace;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.aboutus-content-textarea:focus { border-color: rgba(59, 90, 247, 0.5); }

@@ -18,7 +18,7 @@
   padding: 0;
 
   --design-width: 1280;
-  --design-height: 3692;
+  --design-height: 2800;
   --page-scale: calc(100vw / (var(--design-width) * 1px));
 }
 
@@ -30,7 +30,7 @@
 
 .volunteer-thq-volunteer-elm {
   width: 1280px;
-  height: 3692px;
+  height: 2800px;
   display: flex;
   overflow: hidden;
   position: absolute;
@@ -44,30 +44,30 @@
 }
 
 .volunteer-thq-text-elm16 {
-  top: 119px;
+  top: 90px;
   left: 0px;
   width: 1280px;
   color: rgba(59, 90, 247, 1);
   height: auto;
   position: absolute;
-  font-size: 60px;
+  font-size: 32px;
   font-style: Regular;
   text-align: center;
   font-family: Playfair Display;
   font-weight: 400;
-  line-height: 150px;
+  line-height: 80px;
   font-stretch: normal;
   text-decoration: none;
 }
 
 .volunteer-thq-text-elm17 {
-  top: 477px;
-  left: 303px;
+  top: 280px;
+  left: 0px;
   color: rgba(251, 72, 72, 1);
-  width: 706px;
+  width: 1280px;
   height: auto;
   position: absolute;
-  font-size: 80px;
+  font-size: 60px;
   font-style: Regular;
   text-align: center;
   font-family: Kapakana;
@@ -78,13 +78,13 @@
 }
 
 .volunteer-thq-text-elm18 {
-  top: 811px;
+  top: 450px;
   left: 138px;
   color: rgba(59, 90, 247, 1);
   width: 980px;
   height: auto;
   position: absolute;
-  font-size: 40px;
+  font-size: 22px;
   font-style: Regular;
   text-align: center;
   font-family: Anonymous Pro;
@@ -95,13 +95,13 @@
 }
 
 .volunteer-thq-text-elm19 {
-  top: 230px;
-  left: 205px;
+  top: 140px;
+  left: 0px;
   color: rgba(251, 72, 72, 1);
-  width: 868px;
+  width: 1280px;
   height: auto;
   position: absolute;
-  font-size: 280px;
+  font-size: 250px;
   font-style: Regular;
   text-align: center;
   font-family: Kapakana;
@@ -112,25 +112,25 @@
 }
 
 .volunteer-thq-text-elm20 {
-  top: 694px;
+  top: 380px;
   left: 140px;
   color: rgba(0, 0, 0, 1);
   width: 999px;
   height: auto;
   position: absolute;
-  font-size: 80px;
+  font-size: 45px;
   font-style: Bold;
   text-align: center;
   font-family: Playfair Display;
   font-weight: 700;
-  line-height: 150px;
+  line-height: 80px;
   font-stretch: normal;
   text-decoration: none;
 }
 
 .volunteer-thq-frame7-elm {
   gap: 200px;
-  top: 1480px;
+  top: 840px;
   left: 161px;
   width: 1033px;
   display: flex;
@@ -143,12 +143,12 @@
   color: rgba(0, 0, 0, 1);
   width: 281px;
   height: auto;
-  font-size: 120px;
+  font-size: 65px;
   font-style: Bold;
-  text-align: left;
+  text-align: center;
   font-family: Playfair Display;
   font-weight: 700;
-  line-height: 150px;
+  line-height: 100px;
   font-stretch: normal;
   text-decoration: none;
 }
@@ -157,12 +157,12 @@
   color: rgba(0, 0, 0, 1);
   width: 281px;
   height: auto;
-  font-size: 120px;
+  font-size: 65px;
   font-style: Bold;
   text-align: left;
   font-family: Playfair Display;
   font-weight: 700;
-  line-height: 150px;
+  line-height: 100px;
   font-stretch: normal;
   text-decoration: none;
 }
@@ -171,26 +171,26 @@
   color: rgba(0, 0, 0, 1);
   width: 281px;
   height: auto;
-  font-size: 120px;
+  font-size: 65px;
   font-style: Bold;
-  text-align: left;
+  text-align: center;
   font-family: Playfair Display;
   font-weight: 700;
-  line-height: 150px;
+  line-height: 100px;
   font-stretch: normal;
   text-decoration: none;
 }
 
 .volunteer-thq-star1-elm {
-  top: 956px;
-  left: 331px;
+  top: 210px;
+  left: 100px;
   width: 183px;
   height: 179px;
   position: absolute;
 }
 
 .volunteer-thq-star4-elm {
-  top: 173px;
+  top: 80px;
   left: 873px;
   width: 123px;
   height: 112px;
@@ -198,7 +198,7 @@
 }
 
 .volunteer-thq-star5-elm {
-  top: 431px;
+  top: 200px;
   left: 232px;
   width: 113px;
   height: 90px;
@@ -214,7 +214,7 @@
 }
 
 .volunteer-thq-star3-elm {
-  top: 1159px;
+  top: 1009px;
   left: 331px;
   width: 183px;
   height: 179px;
@@ -222,55 +222,55 @@
 }
 
 .volunteer-thq-rectangle5-elm {
-  top: 978px;
-  left: 729px;
-  width: 446px;
+  top: 500px;
+  left: 800px;
+  width: 250px;
   height: 297px;
   position: absolute;
 }
 
 .volunteer-thq-text-elm24 {
-  top: 926px;
-  left: 715px;
+  top: 520px;
+  left: 690px;
   color: rgba(59, 90, 247, 1);
   width: 474px;
   height: auto;
   position: absolute;
-  font-size: 60px;
+  font-size: 32px;
   font-style: Regular;
   text-align: center;
   font-family: Playfair Display;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 40px;
   font-stretch: normal;
   text-decoration: none;
 }
 
 .volunteer-thq-text-elm25 {
-  top: 1046px;
-  left: 704px;
+  top: 600px;
+  left: 680px;
   color: rgba(0, 0, 0, 1);
   width: 474px;
   height: auto;
   position: absolute;
-  font-size: 120px;
+  font-size: 65px;
   font-style: Regular;
   text-align: center;
   font-family: Playfair Display;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 40px;
   font-stretch: normal;
   text-decoration: none;
 }
 
 .volunteer-thq-text-elm26 {
-  top: 1402px;
-  left: 148px;
+  top: 750px;
+  left: 0px;
   color: rgba(251, 72, 72, 1);
-  width: 957px;
+  width: 1280px;
   height: auto;
   position: absolute;
-  font-size: 150px;
+  font-size: 120px;
   font-style: Regular;
   text-align: center;
   font-family: Kapakana;
@@ -281,15 +281,15 @@
 }
 
 .volunteer-thq-text-elm27 {
-  top: 1971px;
-  left: 97px;
+  top: 1090px;
+  left: 180px;
   color: rgba(59, 90, 247, 1);
   width: 957px;
   height: auto;
   position: absolute;
-  font-size: 150px;
+  font-size: 80px;
   font-style: Regular;
-  text-align: center;
+  text-align: left;
   font-family: Playfair Display;
   font-weight: 400;
   line-height: normal;
@@ -298,15 +298,15 @@
 }
 
 .volunteer-thq-text-elm28 {
-  top: 1633px;
-  left: 295px;
+  top: 930px;
+  left: 260px;
   color: rgba(0, 0, 0, 1);
   width: 340px;
   height: auto;
   position: absolute;
-  font-size: 30px;
+  font-size: 18px;
   font-style: Regular;
-  text-align: left;
+  text-align: center;
   font-family: Anonymous Pro;
   font-weight: 400;
   line-height: normal;
@@ -315,15 +315,15 @@
 }
 
 .volunteer-thq-text-elm29 {
-  top: 1633px;
-  left: 790px;
+  top: 940px;
+  left: 650px;
   color: rgba(0, 0, 0, 1);
   width: 340px;
   height: auto;
   position: absolute;
-  font-size: 30px;
+  font-size: 18px;
   font-style: Regular;
-  text-align: left;
+  text-align: center;
   font-family: Anonymous Pro;
   font-weight: 400;
   line-height: normal;
@@ -332,15 +332,15 @@
 }
 
 .volunteer-thq-text-elm30 {
-  top: 1820px;
-  left: 295px;
+  top: 1010px;
+  left: 310px;
   color: rgba(59, 90, 247, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 16px;
   font-style: Regular;
-  text-align: left;
+  text-align: center;
   font-family: Kay Pho Du;
   font-weight: 400;
   line-height: normal;
@@ -349,15 +349,15 @@
 }
 
 .volunteer-thq-text-elm31 {
-  top: 1761px;
-  left: 790px;
+  top: 1010px;
+  left: 690px;
   color: rgba(59, 90, 247, 1);
   width: 252px;
   height: auto;
   position: absolute;
-  font-size: 24px;
+  font-size: 16px;
   font-style: Regular;
-  text-align: left;
+  text-align: center;
   font-family: Kay Pho Du;
   font-weight: 400;
   line-height: normal;
@@ -368,13 +368,13 @@
 
 
 .volunteer-thq-text-elm34 {
-  top: 2187px;
-  left: 161px;
+  top: 1200px;
+  left: 200px;
   color: rgba(0, 0, 0, 1);
   width: 926px;
   height: auto;
   position: absolute;
-  font-size: 25px;
+  font-size: 24px;
   font-style: Bold;
   text-align: left;
   font-family: Anonymous Pro;
@@ -405,3 +405,37 @@
 .volunteer-thq-text-elm53 { font-weight: 700; }
 .volunteer-thq-text-elm54 { font-weight: 400; }
 .volunteer-thq-text-elm55 { font-weight: 700; }
+
+/* Auth area in navbar */
+.articles-auth-area { display: flex; align-items: center; }
+.articles-user-info { display: flex; align-items: center; gap: 8px; }
+.articles-user-avatar { width: 32px; height: 32px; border-radius: 50%; }
+.articles-user-role {
+  font-size: 12px;
+  padding: 2px 8px;
+  background-color: rgba(59, 90, 247, 0.15);
+  color: rgba(59, 90, 247, 1);
+  border-radius: 20px;
+  font-family: 'Anonymous Pro', monospace;
+  text-transform: uppercase;
+}
+
+/* Dynamic volunteer stars */
+.volunteer-dynamic-star {
+  transition: transform 0.2s ease, filter 0.2s ease;
+  cursor: default;
+}
+.volunteer-dynamic-star:hover {
+  transform: scale(1.5);
+  filter: brightness(0.7);
+}
+/* Spin on hover for decorative stars */
+.volunteer-thq-star4-elm,
+.volunteer-thq-star5-elm {
+  transition: transform 0.6s ease;
+  cursor: default;
+}
+.volunteer-thq-star4-elm:hover,
+.volunteer-thq-star5-elm:hover {
+  transform: rotate(360deg);
+}
